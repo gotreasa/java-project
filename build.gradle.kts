@@ -111,7 +111,7 @@ sonar {
         property("sonar.tests", "src/test,src/it")
         property("sonar.junit.reportPaths", "${layout.buildDirectory.dir("test-results/test").get()},${layout.buildDirectory.dir("test-results/integrationTest").get()}")
         property("sonar.coverage.jacoco.xmlReportPaths", "${layout.buildDirectory.dir("reports/jacoco/test/jacocoTestReport.xml").get()}")
-        // SONAR_QUALITY_GATE_DISABLED
+        property("sonar.qualitygate.wait", "true")
     }
 }
 
